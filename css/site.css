@@ -1,0 +1,59 @@
+/*
+clase para eliminar margenes internas 
+*/
+.no-padding{
+padding: 0 !important ;
+}
+/*
+clase para añadir margen inferior 
+*/
+
+.margin-b-20{
+margin-bottom: 20px; 
+}
+
+/*
+clase para poner rojo al pasar el cursor 
+*/
+.color-rojo:hover{
+    color: #ff0000;
+}
+
+/*
+clase para añadir borde de color rojo a los span contenidos en en elementos con clase .col-md-4
+*/
+.col-md-4 span{
+    border: 2px solid #ff0000;
+    background-color: #000000;
+    color: aqua;
+    border-radius: 30%;
+    transition:background-color 2s;
+}
+.col-md-4 span:hover{
+    background-color: #0f0 !important;
+}
+.col-md-4::before{
+    content: 'xxx';
+    color: white;
+}
+.col-md-4::after{
+    content: 'yyy';
+    color: red;
+}
+
+/*
+clase para añadir borde punteado de color azul a los hijos div contenidos en en elementos con clase .col-md-6
+*/
+.col-md-6 >div{
+    border: 3px dotted #0000ff;
+}
+
+/*
+añadir propiedad de altura a los elementos con id alto
+v=visual
+h=heigth
+*/
+#alto{
+    height: 80vh;
+    background-color: #0f0f0f !important;
+}
